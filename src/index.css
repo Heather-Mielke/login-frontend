@@ -9,7 +9,7 @@ body{
 
 }
 .main{
-  background: url('../public/mountains.jpg');
+  background: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -23,11 +23,11 @@ body{
 .blur::before{
   content: "";
   position: absolute;
-  width: 90%;
-  height: 80%;
-  background: url('../public/mountains.jpg');
+  width: 80%;
+  height: 70%;
+  background: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
   background-size: cover;
-  box-shadow: 0 3px 10px rgb( 0 0 0 /.8);
+  box-shadow: 0 3px 10px rgb( 0 0 0 /.9);
   filter: blur(4px) grayscale(.3);
 
 }
@@ -55,7 +55,11 @@ body{
   text-align: center;
   font-size: 40px;
   margin-bottom: 3vh;
-  font-family: 'Limelight', cursive;
+  font-family: 'Montserrat', cursive;
+  font-weight: 200;
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 0 2vw 2vh 2vw;
 }
 
 .input-container{
@@ -63,21 +67,25 @@ body{
   flex-direction: column;
 }
 .input-container > label {
-  margin: 1.5vh 0 0 0.3vw;
+  margin: 1.2vh 0 0 0.8vw;
+  color: white;
+  font-family: 'Montserrat', serif;
 }
 .input-container > input {
   width: 100%;
   margin: 1vh auto 3vh auto;
   padding: 13px;
   border-radius: 30px;
-  background: rgba(244, 244, 245, 0.201);
+  background: rgba(254, 254, 255, 0.276);
   color:white;
   font-size: 18px;
-  border: 2px inset black;
+  border: 2px inset rgb(89, 89, 89);
 }
 
 #button {
-  background: rgba(254, 134, 5, 0.742);
+  background: linear-gradient(rgba(159, 164, 168, 0.454), rgba(87, 32, 46, 0.8) 70%);
+  font-family: 'Montserrat', serif;
+  cursor: pointer;
 }
 .input-container > input:nth-child(5){
   margin-top: 2vh;
@@ -85,8 +93,11 @@ body{
 p {
   text-align: center;
   color: white;
+  font-family: 'Montserrat', serif;
+  font-size: .9em;
 }
 p > span {
-  color: rgb(52, 52, 84);
-  font-size: 15px;
+  color: rgb(147, 74, 92);
+  font-size: .85em;
+  cursor: pointer;
 }

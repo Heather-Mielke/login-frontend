@@ -17,9 +17,9 @@ export const NavContainer = style.div `
 export const LogoContainer = style.div `
     width: 50%;
     color: white;
-    font-family: 'Montserrat', arial;
+    font-family: 'Montserrat', serif;
     font-size: 40px;
-   
+    font-weight: 200;
 
 `
 export const ButtonContainer = style.div `
