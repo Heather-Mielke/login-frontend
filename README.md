@@ -1,5 +1,6 @@
 # Login-frontend
-
+ ## To Start
+- npm start
 ## React login
 User login with react frontend and node.js/mongodb backend.
 
