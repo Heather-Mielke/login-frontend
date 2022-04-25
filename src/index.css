@@ -5,8 +5,13 @@
 }
 
 body{
- background: whitesmoke;
+ background: black;
 
+}
+h1{
+  color: white;
+  font-family: 'Montserrat', serif;
+  margin: 0 0 0 30vw;
 }
 .main{
   background: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
@@ -86,10 +91,12 @@ body{
   background: linear-gradient(rgba(159, 164, 168, 0.454), rgba(87, 32, 46, 0.8) 70%);
   font-family: 'Montserrat', serif;
   cursor: pointer;
+  transition: all .3s ease;
 }
-.input-container > input:nth-child(5){
-  margin-top: 2vh;
+#button:hover{
+  transform:scale(1.05);
 }
+
 p {
   text-align: center;
   color: white;
@@ -100,4 +107,74 @@ p > span {
   color: rgb(147, 74, 92);
   font-size: .85em;
   cursor: pointer;
+}
+.banner{
+  width: 100vw;
+  position: relative;
+  
+}
+.greet{
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  padding: 3vh 0;
+  background-color: rgba(255, 255, 255, 0.447);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 10px rgb( 0 0 0 /.9);
+  transition: all .3s ease;
+}
+.greet > h2{
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat', serif;
+  font-size: 35px;
+  text-shadow: 0 3px 10px rgba(93, 93, 126, 0.5);
+}
+
+@media (max-width: 610px) {
+  .greet{
+    padding: 1vh 0;
+    top: 15vh;
+  }
+  .greet > h2 {
+    font-size: 25px;
+  }
+}
+.logout{
+  font-size: 20px;
+    padding: 3px 8px;
+    margin-top: 7px;
+    background: transparent;
+    color: white;
+    border: 3px outset rgb(82, 101, 121);
+    box-shadow: 0 3px 10px rgb(200 200 220 /.6);
+    border-radius: 2px;
+    font-family: 'Montserrat',serif;
+    cursor: pointer;
+    position:absolute;
+    top: 17px;
+    right: 85px;
+    z-index:99;
+    transition:all .3s ease;
+}
+.logout:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width: 400px) {
+  .logout{
+    top: 20px;
+    right:55px;
+    font-size: 13px;
+  }
+}
+.error{
+ padding: 5px;
+}
+.error > p {
+  color: rgb(146, 37, 37);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:900;
 }

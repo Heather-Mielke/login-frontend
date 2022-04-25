@@ -1,5 +1,5 @@
 import style from "styled-components";
-import { Link } from "react-router-dom";
+
 
 export const NavContainer = style.div `
     width: 100vw;
@@ -8,6 +8,7 @@ export const NavContainer = style.div `
     font-size: 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px;
     position: fixed;
     z-index:2;
@@ -15,40 +16,25 @@ export const NavContainer = style.div `
 `
 
 export const LogoContainer = style.div `
-    width: 50%;
+    width: 60%;
     color: white;
     font-family: 'Montserrat', serif;
     font-size: 40px;
     font-weight: 200;
-
+    transition: all .3s ease;
+    
+@media (max-width: 610px){
+    font-size: 24px;
+}
 `
 export const ButtonContainer = style.div `
     width: 40%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
 
 `
-export const GreetingContainer = style.div `
-    width: 80%;
-`
-export const NavLink = style(Link)`
-    color: white;
-    font-size: large;
-    text-decoration: none;
-    margin 2%;
-    font-family: 'Montserrat', serif;
-    font-weight: 200;
-    transition: all .3s ease;
-    
-    @media (max-width: 700px) {
-        display:none;
-    }
-    &:hover{
-        color: black;
-        text-decoration: underline;
-        transform: scale(1.2);
-    }
-`
+
 export const NavHamburger = style.button `
     width: 80px;
     height: 55px;
@@ -58,9 +44,9 @@ export const NavHamburger = style.button `
     border: none;
     cursor: pointer;
 
-    // @media (min-width: 700px) {
-    //     display: none;
-    // }
+   @media (max-width: 400px){
+       width: 30px;
+   }
 
 `
 export const NavExtendContainer = style.div`
@@ -71,19 +57,6 @@ export const NavExtendContainer = style.div`
 
     @media (min-width: 700px) {
         display: none;
-    }
-
-`
-
-export const NavLinkExtend = style(Link)`
-    font-size: 30px;
-    text-decoration: none;
-    color: black;
-    margin: 2%;
-    font-family: 'Montserrat', serif;
-
-    &:hover{
-        color: grey;
     }
 
 `
